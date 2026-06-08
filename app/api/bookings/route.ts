@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { createBooking, listBookings, validateBooking } from "../../../../lib/bookings";
-import { sendBookingEmail } from "../../../../lib/email";
+import { createBooking, listBookings, validateBooking } from "../../../lib/bookings";
+import { sendBookingEmail } from "../../../lib/email";
 
 export async function GET() {
   const bookings = await listBookings();
